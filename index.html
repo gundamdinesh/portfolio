@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>RESPONSIVE PERSONAL PORTFOLIO WEBSITE </title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+            <meta https-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!--body-->
+        <header class="header">
+            <a href="#" class="logo">Portfolio</a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">ABOUT</a>
+                <a href="#achievements">ACHIEVEMENTS</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </header>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3 class="special">Hello,It's Me</h3>
+                <h1>Gundam Dinesh</h1>
+                <h3>And I'm a <span class="multiple-text"></span></h3>
+                <div class="social-media">
+                    <a href="https://github.com/gundamdinesh"><i class='bx bxl-github'></i></a>
+                    <a href="mailto: gundamdinesh1@gmail.com"><i class='bx bxs-envelope'></i></a>
+                    <a href="https://www.instagram.com/known_as_g.d.p_7.4.16_/"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.linkedin.com/in/gundamdinesh/"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+                <a  href="GUNDAM's Resume (2).pdf" class="btn" download>Download CV</a>
+                <h3 class="special1"></h3>
+            </div>
+           
+        </section>
+        
+        <section class="about" id="about">
+            
+                <h2 class="heading">About<span>Me</span></h2><br>
+                <p class="para">My name is Dinesh, and I'm a pursuing my B-tech in the stream of Computer Science and CyberSecurity from MLR Institute Of Technology.I am looking for a career that can provide me with a stable flow of knowledge and experience to enhance my abilities as an Engineer.
+                </p>
+                <div class="leftpart"> <br>
+                
+                    <div class="titles">
+                        <p class="links activelink" onclick="fun('skills')">Skills</p>
+                        <p class="links" onclick="fun('experience')">Experience</p>
+                        <p class="links" onclick="fun('education')">Education</p>
+                      </div>
+                  <br>
+                  <section class="secsec"> 
+                  <div class="content activecontent" id="skills">
+                    <ul>
+                      <li><span>FRONT-END</span><br>
+                      HTML , CSS , JS</li><br>
+                      <li><span>PROGRAMMING</span><br>
+                      C , JAVA</li><br>
+                      <li><span>CYBER-SECURITY</span><br>
+                      Networking , Vulnerability Assessment , Web-App Pen Testing , Ethical Hacking</li><br>
+                      <li><span>OPERATING SYSTEM</span><br>
+                      Windows , Linux</li><br>
+                      <li><span>DATABASE</span><br>
+                      Oracle , MYSQL</li><br>
+                      <li><span>Data Structures and Algorithms</span></li>
+                    </ul>
+                  </div>
+                  <div class="content " id="experience">
+                    <ul>
+                      <li><span>Web-App PenTesting Trainer</span><br>
+                        Kleap Information Technology pvt ltd , Hyderabad<br>
+                       02/2023 - 05/2023</li><br>
+                       <li><span>Ethical Hacking & CyberSecurity Internship</span><br>
+                        Supraja Technologies, Vijayawada<br>
+                       08/2022 - 11/2022 </li><br>
+                    </ul>
+                  </div>
+                  <div class="content " id="education">
+                    <ul>
+                      <li><span>B-TECH</span><br>
+                        MLR institute of technology , Hyderabad<br>
+                      2020-present<br>
+                      CSE-CYBER-SECURITY</li>
+                      <br>
+                      <li><span>INTERMEDIATE</span><br>
+                        Sri Chaitanya Junior College , Hyderabad<br>
+                      2018-2020<br>
+                      MPC</li>
+                      <br>
+                      <li><span>SCHOOLING</span><br>
+                        Narayana High School , Hyderabad<br>
+                      2018<br>
+                     SSC</li>
+                      <br>
+                     
+                    </ul>
+                  </div>
+                </section> 
+                  
+                </div>
+                
+              
+        </section> 
+        
+              <script>
+                var links = document.getElementsByClassName("links");
+                var contents = document.getElementsByClassName("content");
+                function fun(tab)
+                {
+                  for(link of links)
+                   {
+                      link.classList.remove("activelink");
+                   }
+                   for(content of contents)
+                   {
+                   content.classList.remove("activecontent");
+                   }
+                   event.currentTarget.classList.add("activelink");
+                  
+                   document.getElementById(tab).classList.add("activecontent");
+                }
+              </script>
+       
+        
+        <section class="services" id="achievements">
+            <h2 class="heading">My<span>Achievements</span></h2>
+
+            <div class="services-container">
+                <div class="services-box">
+                    <i class='bx bx-user-circle'></i>
+                    <h3>Cyber Security Awareness Program</h3>
+                    <img src="d5.jpg" width="300" height="200">
+                    <p>Trained 200+ students of MLRIT on various attacks and tools related to cybersecurity & Ethical Hacking</p>
+                </div>
+                
+                <div class="services-box">
+                    <i class='bx bx-shield-x'></i>
+                    <h3>Cyber Security Interaction Program</h3>
+                    <img src="d1.jpg" width="300" height="200">
+                    <p>Interaction with my Juniors about latest cyber attacks and security measures needed and also given awareness about importance of women security in present world  </p>
+                </div>
+
+                <div class="services-box">
+                    <i class='bx bx-server'></i>
+                    <h3>Web-App Penetration Testing Bootcamp Program</h3>
+                    <img src="d4.jpg" width="300" height="200">
+                    <p>Trained 50+ studends on Web Application Penetration Testing and also conducted Hackathon at Kleap Technologies pvt ltd , Hyderabad </p>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio"id="projects">
+            <h2 class="heading">Latest<span>Project</span></h2>
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="jan-vlacuha-Rns_A8bJ_dQ-unsplash.jpg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Personal Portfolio</h4>
+                        <p>In this project I made my own portfolio website for myself. I would like to Showcase my projects, my social media handles, my achievements and my skills on my website.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="kevin-canlas-QYHehJ9Iovs-unsplash.jpg" width="300" height="400" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Travel and Tourism Management System</h4>
+                        <p>In this project I developed JAVA desktop Application where users are allowed to book their travel pakages according to their choices.</p>
+                        <a href="https://github.com/gundamdinesh/travelmanagementsystem"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="rasberry.jpg"alt="" height="300" width="250">
+                    <div class="portfolio-layer">
+                        <h4>Building Own Cloud Using rasberry Pi </h4>
+                        <p>This project is about creating a Cloud storage for our personal use rather than relying on other Cloud storage services.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact"id="contact">
+            <h2 class="heading">Contact<span>ME!</span></h2>
+
+            <form  name="submit-to-google-sheet">
+                <div class="input-box">
+                    <input type="text" name="Name" placeholder="Full Name" required>
+                    <input type="email" name="Email Address" placeholder="Email Address" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="Mobile Number" placeholder="Mobile Number" required>
+                    <input type="text" name="Email Subject" placeholder="Email Subject" required>
+                </div>
+                <textarea name="Your Message" id="" cols="30" rows="10"placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message"class="btn">
+            </form>
+           <h1> <span id="msg"></span></h1>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2023 by Gundam_Dinesh | Made with Love &hearts;</p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+            </div>
+        </footer>
+
+   <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="script.js"></script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzqvpmlgScIa5_L45sHRjsGLKlIJzxs78FvItPWUn6_nGpLOF8-F6tt7KtV-mNL6EIQxg/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg=document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML="Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            }) 
+          </script> 
+    </body>
+</html>
